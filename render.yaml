@@ -1,0 +1,17 @@
+services:
+  - type: static
+    name: kibagabaga-booking
+    rootDir: .
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "20"
+    routes:
+      - path: /
+        filePath: dist/index.html
+      - path: /*
+        filePath: dist/index.html
+    autoDeploy: true

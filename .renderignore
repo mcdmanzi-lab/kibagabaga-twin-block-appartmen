@@ -1,0 +1,13 @@
+node_modules
+.git
+.gitignore
+README.md
+RENDER_DEPLOYMENT_GUIDE.md
+RENDER_QUICK_START.txt
+ERROR_ANALYSIS_AND_FIXES.md
+FIXES_SUMMARY.txt
+BEFORE_AFTER_FIXES.md
+QUICK_START.md
+.env.local
+.DS_Store
+dist

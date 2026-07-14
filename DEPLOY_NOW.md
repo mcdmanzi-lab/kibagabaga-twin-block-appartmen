@@ -50,22 +50,22 @@ Click "Deploy" - Done! Vercel will automatically:
 
 ## Option 2: Deploy to Render (ALTERNATIVE)
 
-### Step 1: Create Blueprint
+### Step 1: Create Static Site
 1. Go to https://render.com/
 2. Click "Dashboard" (sign in with GitHub)
-3. Click "New +" → "Blueprint"
+3. Click "New +" → "Static Site"
 4. Select `kibagabaga-twin-block-appartmen`
 
-### Step 2: Auto-Configure
-- Render will automatically detect `render.yaml`
-- All settings pre-configured
+### Step 2: Configure Build Settings
+- **Build Command:** `npm install && npm run build`
+- **Publish Directory:** `dist`
+- **Branch:** `main`
 
 ### Step 3: Deploy
-Click "Create" - Render will:
-- Use optimized npm settings
-- Allocate 4GB memory
+Click "Create Static Site" - Render will:
+- Use optimized npm settings from `.npmrc`
 - Build in ~5-10 minutes
-- Deploy to live URL
+- Deploy to live URL with auto-HTTPS
 
 **Your site will be live at:** `https://your-project.onrender.com`
 

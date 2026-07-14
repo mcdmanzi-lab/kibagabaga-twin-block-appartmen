@@ -24,7 +24,7 @@ export default function AdminDashboard() {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [selectedBooking, setSelectedBooking] = useState<Booking | null>(null);
 
-  const ADMIN_PASSWORD = 'kibagabaga2024'; // Default password
+  const ADMIN_PASSWORD = 'kibagabaga'; // Default password
 
   useEffect(() => {
     // Check if already logged in

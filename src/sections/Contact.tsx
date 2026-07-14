@@ -187,6 +187,12 @@ export default function Contact() {
             <span className="font-body text-xs text-charcoal/40">
               Locally Managed in Kigali, Rwanda
             </span>
+            <a
+              href="/#admin"
+              className="font-body text-xs text-charcoal/40 hover:text-charcoal transition-colors duration-300 underline"
+            >
+              Admin
+            </a>
           </div>
         </div>
       </div>
